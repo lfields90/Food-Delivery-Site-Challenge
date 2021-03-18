@@ -1,11 +1,31 @@
+/* Global Styles */
+
+:root {
+  --khaki: hsl(20, 90%, 92%);
+  --carrot: hsl(22, 82%, 53%);
+  --sherbert: hsl(22, 92%, 70%);
+  --chocolate: hsl(20, 20%, 24%);
+  --darkChocolate: hsl(21, 50%, 8%);
+  --fontSize: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--fontSize);
+  font-family: 'Montserrat', sans-serif;
+}
+
 .main-container {
   background-color: #FFF;
 }
 
 .header-container {
-  background-color: #FDE5D9;
+  background-color: var(--khaki);
 }
 
 .footer-container {
-  background-color: #FDE5D9;
+  background-color: var(--khaki);
 }
