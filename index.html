@@ -5,37 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
   <title>Food Delivery Landing Page</title>
 </head>
 <body>
-  <main class="container">
+  <main>
+    <div class="header-footer-margin head-radius">
+      <header class="container">
+        <img class="logo" src="images/food-delivery-logo2.png" alt="Site Logo">
+        <img class="nav-icon" src="images/small-sherbert-square.png" alt="small square highlight">
+        <nav>
+          <ul class="nav_links">
+            <li><a class="active bold" href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a class="bold" href="#">Log In</a></li>
+          </ul>
+        </nav>
+        <a class="cta" href="#"><button>Sign Up</button></a>
+      </header>
 
-    <header>
-      <img class="logo" src="images/food-delivery-logo2.png" alt="Site Logo">
-      <nav>
-        <ul class="nav_links">
-          <li class="active-link bold-link"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#download">Download</a></li>
-          <li><a href="#recipes">Recipes</a></li>
-          <li class="bold-link"><a href="#">Log In</a></li>
-        </ul>
-      </nav>
-      <a class="cta" href="#"><button>Sign Up</button></a>
-    </header>
-
-    <div class="hero container">
-      <div class="hero-intro">
-        <h3>Food Delivery ______</h3>
-        <h1>Observe the Food<br>Feel the Taste.</h1>
-        <p>Add the joy of best Taste. Foodie Moments. Taste the Best that Surprise you.</p>
-        <button class="filled-button" type="button" name="order-now">Order Now</button>
-      </div>
-      <div class="hero-image">
-        <img src="images/pazta.png" alt="Hero Image">
+      <div class="hero container">
+        <div class="hero-intro">
+          <h3>Food Delivery ______</h3>
+          <h1>Observe the Food<br>Feel the Taste.</h1>
+          <p>Add the joy of best Taste. Foodie Moments. Taste<br>the Best that Surprise you.</p>
+          <a class="cta" href="#"><button>Order Now</button></a>
+        </div>
+        <div class="hero-image">
+          <img src="images/pazta.png" alt="Hero Image">
+        </div>
       </div>
     </div>
 
@@ -43,11 +45,11 @@
       <div class="about-intro">
         <h3>About Us</h3>
         <h1>Every Meal is a<br>Happy Meal</h1>
-        <p>There are a lot of ways you can go with your tagline if you're not trying to tie in a space.</p>
-        <button type="button" name="learn-more">Learn More</button>
+        <p>There are a lot of ways you can go with your<br>tagline if you're not trying to tie in a space.</p>
+        <a class="cta" href="#"><button class="chocolate">Learn More</button></a>
       </div>
       <div class="about-image">
-        <img src="" alt="About Image">
+        <img src="images/spices.png" alt="About Image">
       </div>
     </div>
 
@@ -77,9 +79,9 @@
       <div class="download-intro">
         <h3>Download</h3>
         <h1>Get the QFood App<br>Just Now</h1>
-        <p>The brand has built a loyal following, largely because of its transparency and the streamlined ordering process it offers its customers.</p>
-        <button type="button" name="appstore">Download</button>
-        <button type="button" name="playstore">Download</button>
+        <p>The brand has built a loyal following, largely because of<br>its transparency and the streamlined ordering process it<br>offers its customers.</p>
+        <a class="cta" href="#"><button class="chocolate">Download</button></a>
+        <a class="cta" href="#"><button class="chocolate num-2">Download</button></a>
       </div>
       <div class="download-image">
         <img src="" alt="Download Image">
@@ -120,49 +122,51 @@
       </div>  <!--  / Recipe Cards Container Closing Tag -->
     </div>  <!--  / Recipes Container Closing Tag -->
 
-    <footer class="container">
-      <div class="socials-container">
-        <img src="" alt="Site Logo">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod.</p>
-        <div class="social-media-links">
-          <button type="button" name="Facebook"><img src="" alt="facebook logo"></button>
-          <button type="button" name="Twitter"><img src="" alt="twitter logo"></button>
-          <button type="button" name="Instagram"><img src="" alt="instagram logo"></button>
-          <button type="button" name="Grubhub"><img src="" alt="grubhub logo"></button>
+    <div class="header-footer-margin foot-radius">
+      <footer class="container">
+        <div class="socials-container">
+          <img src="" alt="Site Logo">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod.</p>
+          <div class="social-media-links">
+            <button type="button" name="Facebook"><img src="" alt="facebook logo"></button>
+            <button type="button" name="Twitter"><img src="" alt="twitter logo"></button>
+            <button type="button" name="Instagram"><img src="" alt="instagram logo"></button>
+            <button type="button" name="Grubhub"><img src="" alt="grubhub logo"></button>
+          </div>
         </div>
-      </div>
-      <div class="menu-link-container">
-        <div class="menu-container">
-          <h4>Our Menu</h4>
-          <ul>
-            <li>Breakfast</li>
-            <li>Lunch</li>
-            <li>Dinner</li>
-            <li>Snacks</li>
+        <div class="menu-link-container">
+          <div class="menu-container">
+            <h4>Our Menu</h4>
+            <ul>
+              <li>Breakfast</li>
+              <li>Lunch</li>
+              <li>Dinner</li>
+              <li>Snacks</li>
+            </ul>
+          </div>
+          <div class="link-container">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>Services</li>
+              <li>Support</li>
+              <li>Conditions</li>
+              <li>Security</li>
+            </ul>
+          </div>
+        </div>  <!--  / Menu - Link Container Closing Tag -->
+        <div class="stay-connected">
+          <h4>Stay Connected</h4>
+          <div class="email-container">
+            <input type="email" name="" value="">
+            <button type="button" name="button"> <img src="" alt="send email button"> </button>
+          </div>
+          <ul class="footer-connect-links">
+            <li><a href="tel:1-500-258-2654">Call 1(500)258-2654</a></li>
+            <li><a href="mailto:support@fooders.net">Support@fooders.net</a></li>
           </ul>
         </div>
-        <div class="link-container">
-          <h4>Useful Links</h4>
-          <ul>
-            <li>Services</li>
-            <li>Support</li>
-            <li>Conditions</li>
-            <li>Security</li>
-          </ul>
-        </div>
-      </div>  <!--  / Menu - Link Container Closing Tag -->
-      <div class="stay-connected">
-        <h4>Stay Connected</h4>
-        <div class="email-container">
-          <input type="email" name="" value="">
-          <button type="button" name="button"> <img src="" alt="send email button"> </button>
-        </div>
-        <ul class="footer-connect-links">
-          <li><a href="tel:1-500-258-2654">Call 1(500)258-2654</a></li>
-          <li><a href="mailto:support@fooders.net">Support@fooders.net</a></li>
-        </ul>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
   </main>
 </body>

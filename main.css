@@ -3,7 +3,9 @@
 :root {
   --khaki: hsla(20, 90%, 92%, 1);
   --carrot: hsla(22, 82%, 53%, 1);
+  --lightCarrot: hsla(22, 82%, 53%, 0.8);
   --sherbert: hsla(22, 92%, 70%, 1);
+  --lightSherbert: hsla(22, 92%, 70%, 0.8);
   --chocolate: hsla(20, 20%, 24%, 1);
   --darkChocolate: hsla(21, 50%, 8%, 1);
   --fontSize: 12px;
@@ -23,13 +25,12 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #FFF;
 }
 
 h1 {
   font-size: 3rem;
   font-weight: 800;
-  margin: 20px 0 15px 0;
+  margin: 20px 0;
 }
 
 h3 {
@@ -37,7 +38,7 @@ h3 {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
-  margin-top: 40px;
+  padding-top: 40px;
 }
 
 li, a, button {
@@ -53,6 +54,11 @@ a {
   color: inherit;
 }
 
+p {
+  letter-spacing: 0.1rem;
+  margin-bottom: 40px;
+}
+
 button {
   background: linear-gradient(var(--sherbert), var(--carrot));
   color: hsla(0, 0%, 100%, 1);
@@ -64,20 +70,47 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(hsla(22, 92%, 70%, 0.8), hsla(22, 82%, 53%, 0.8));
+  background: linear-gradient(var(--lightSherbert), var(--lightCarrot));
 }
 
-/* Header Styles */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15%;
+}
 
-header, .hero, footer {
+.header-footer-margin {
+  margin: 10px 10px 10px 10px;
   background-color: var(--khaki);
 }
+
+.head-radius {
+  border-radius: 20px 20px 0 0;
+}
+
+.foot-radius {
+  border-radius: 0 0 20px 20px;
+}
+
+.chocolate {
+  background: linear-gradient(var(--darkChocolate), var(--chocolate));
+}
+
+.num-2 {
+  margin-left: 10px;
+}
+
+/* .download-intro button:nth-child(2) {
+  margin-left: 500px;
+} */
+
+/* Header Styles */
 
 header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 10px 15%;
 }
 
 .logo {
@@ -85,6 +118,10 @@ header {
   width: auto;
   margin-right: auto;
   cursor: pointer;
+}
+
+.nav-icon {
+  padding-top: 1px;
 }
 
 .nav_links li {
@@ -97,24 +134,54 @@ header {
 }
 
 .nav_links li a:hover {
-  color: var(--sherbert)
+  color: var(--sherbert);
 }
 
+.active:before {
+  /* content: url(images/small-sherbert-square.png); */
+}
 
-/* .nav li {
-  display: inline-block;
-  color: var(--chocolate);
-  margin-right: 20px;
-} */
-
-/* .nav .active-link {
+.active {
   color: var(--sherbert);
-} */
+}
 
-/* .active-link:before {
-  content: 'o '
-} */
-
-/* .bold-link {
+.bold {
   font-weight: 600;
-} */
+}
+
+/* Hero Styles */
+
+.hero {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-intro {
+  align-items: center;
+}
+
+.hero-image > img {
+  padding-top: 40px;
+  height: 450px;
+  width: auto;
+}
+
+/* About Styles */
+
+.about {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.about-intro {
+  align-items: center;
+  order: 1;
+}
+
+.about-image > img {
+  padding-top: 40px;
+  height: 450px;
+  width: auto;
+}
