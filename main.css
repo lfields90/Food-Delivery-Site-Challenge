@@ -97,14 +97,6 @@ button:hover {
   background: linear-gradient(var(--darkChocolate), var(--chocolate));
 }
 
-.num-2 {
-  margin-left: 10px;
-}
-
-/* .download-intro button:nth-child(2) {
-  margin-left: 500px;
-} */
-
 /* Header Styles */
 
 header {
@@ -185,3 +177,14 @@ header {
   height: 450px;
   width: auto;
 }
+
+/* Download Styles */
+
+
+.num-2 {
+  margin-left: 10px;
+}
+
+/* .download-intro button:nth-child(2) {
+  margin-left: 500px;
+} */
