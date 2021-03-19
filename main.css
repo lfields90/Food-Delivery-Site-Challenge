@@ -24,7 +24,7 @@ body {
   background-color: #FFF;
 }
 
-/* h1 {
+h1 {
   color: var(--chocolate);
   font-size: 3rem;
   font-weight: 800;
@@ -36,13 +36,13 @@ h3 {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 p {
   color: var(--chocolate);
   font-weight: 400;
-} */
+}
 
 /* Header Styles */
 
@@ -88,5 +88,3 @@ header, .hero, footer {
   border-radius: 10px;
   border: 1px solid var(--sherbert);
 } */
-
-/* Footer Styles */
