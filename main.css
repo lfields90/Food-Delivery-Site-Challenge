@@ -1,11 +1,11 @@
 /* Global Styles */
 
 :root {
-  --khaki: hsl(20, 90%, 92%);
-  --carrot: hsl(22, 82%, 53%);
-  --sherbert: hsl(22, 92%, 70%);
-  --chocolate: hsl(20, 20%, 24%);
-  --darkChocolate: hsl(21, 50%, 8%);
+  --khaki: hsla(20, 90%, 92%, 1);
+  --carrot: hsla(22, 82%, 53%, 1);
+  --sherbert: hsla(22, 92%, 70%, 1);
+  --chocolate: hsla(20, 20%, 24%, 1);
+  --darkChocolate: hsla(21, 50%, 8%, 1);
   --fontSize: 12px;
 }
 
@@ -17,6 +17,8 @@
 
 html {
   font-size: var(--fontSize);
+  font-weight: 400;
+  color: var(--chocolate);
 }
 
 body {
@@ -25,7 +27,6 @@ body {
 }
 
 h1 {
-  color: var(--chocolate);
   font-size: 3rem;
   font-weight: 800;
   margin: 20px 0 15px 0;
@@ -36,12 +37,34 @@ h3 {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
-  /* margin-top: 40px; */
+  margin-top: 40px;
 }
 
-p {
-  color: var(--chocolate);
-  font-weight: 400;
+li, a, button {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  background: linear-gradient(var(--sherbert), var(--carrot));
+  color: hsla(0, 0%, 100%, 1);
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background: linear-gradient(hsla(22, 92%, 70%, 0.8), hsla(22, 82%, 53%, 0.8));
 }
 
 /* Header Styles */
@@ -50,18 +73,33 @@ header, .hero, footer {
   background-color: var(--khaki);
 }
 
-.nav-container {
-  border: 1px solid black;
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 15%;
 }
 
-.nav {
-
-}
-
-.site-logo {
+.logo {
   height: 40px;
   width: auto;
+  margin-right: auto;
+  cursor: pointer;
 }
+
+.nav_links li {
+  display: inline-block;
+  padding-right: 40px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: var(--sherbert)
+}
+
 
 /* .nav li {
   display: inline-block;
@@ -79,12 +117,4 @@ header, .hero, footer {
 
 /* .bold-link {
   font-weight: 600;
-} */
-
-/* button {
-  background: linear-gradient(var(--sherbert), var(--carrot));
-  color: white;
-  padding: 2px 20px;
-  border-radius: 10px;
-  border: 1px solid var(--sherbert);
 } */
