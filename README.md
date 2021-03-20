@@ -1,6 +1,6 @@
 # Food Delivery Site - Frontend Development Practice
 
-![Design preview for the Food Delivery Site coding challenge](/design/Food-Delivery-Website-Walkthrough.mov
+![Design preview for the Food Delivery Site coding challenge](/design/food-delivery-site-image.png
 ## Welcome! 👋
 
 **Hi, my name is LaMonte and thanks for checking out this front-end coding challenge.**
