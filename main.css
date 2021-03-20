@@ -33,6 +33,11 @@ h1 {
   margin: 20px 0;
 }
 
+h2 {
+  font-weight: 500;
+  margin: 20px 0;
+}
+
 h3 {
   color: var(--sherbert);
   font-size: 1rem;
@@ -175,6 +180,27 @@ header {
 .about-image > img {
   padding-top: 40px;
   height: 450px;
+  width: auto;
+}
+
+/* Features Styles */
+
+.features.container {
+  display: block;
+  text-align: center;
+}
+
+.feature-cards-container {
+  display: flex;
+  padding: 30px 0;
+}
+
+.feature {
+  padding: 0 10px;
+}
+
+.feature > img {
+  height: 50px;
   width: auto;
 }
 
