@@ -6,6 +6,7 @@
   --lightCarrot: hsla(22, 82%, 53%, 0.8);
   --sherbert: hsla(22, 92%, 70%, 1);
   --lightSherbert: hsla(22, 92%, 70%, 0.8);
+  --veryLightSherbert: hsla(22, 92%, 70%, 0.1);
   --chocolate: hsla(20, 20%, 24%, 1);
   --lightChocolate: hsla(20, 20%, 24%, 0.15);
   --darkChocolate: hsla(21, 50%, 8%, 1);
@@ -92,9 +93,10 @@ button:hover {
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 10px 15%;
+  max-width: 70%;
+  margin: 0 auto;
 }
 
 .header-footer-margin {
@@ -162,7 +164,7 @@ header {
 
 .hero {
   display: flex;
-  height: 100%;
+  height: 50vh;
   width: 100%;
 }
 
@@ -180,17 +182,21 @@ header {
 
 .about {
   display: flex;
-  height: 100%;
+  height: 50vh;
   width: 100%;
 }
 
+.about.container {
+  justify-content: center;
+}
+
 .about-intro {
-  align-items: center;
   order: 1;
 }
 
 .about-image > img {
-  padding-top: 40px;
+  padding: 40px 80px 40px 0;
+  /* margin-right: 20%; */
   height: 450px;
   width: auto;
 }
@@ -200,6 +206,7 @@ header {
 .features.container {
   display: block;
   text-align: center;
+  height: 50vh;
 }
 
 .feature-cards-container {
@@ -216,8 +223,19 @@ header {
   width: auto;
 }
 
+.features > h1 {
+  margin-bottom: 5%;
+}
+
+.features > h3 {
+  margin-top: 5%;
+}
+
 /* Download Styles */
 
+.download {
+  height: 50vh;
+}
 
 .num-2 {
   margin-left: 10px;
@@ -228,7 +246,8 @@ header {
 .recipes.container {
   display: block;
   text-align: center;
-  margin: 30px 0;
+  margin-top: 50px;
+  height: 50vh;
 }
 
 .recipe-cards-container {
@@ -236,8 +255,13 @@ header {
   padding: 50px 0;
 }
 
+.recipe {
+  height: 200px;
+  background-color: var(--veryLightSherbert);
+}
+
 .recipe + .recipe {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .recipe {
@@ -359,7 +383,3 @@ footer input {
 .created-by {
   width: 100%;
 }
-
-
-
-/*  */
